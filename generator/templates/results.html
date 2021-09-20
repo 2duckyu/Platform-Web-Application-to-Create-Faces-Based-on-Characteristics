@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>GAN을 이용한 캐릭터 특성에 따른 얼굴 생성기-ㄴㅇㅋPROJECT</title>
+  <!-- MDB -->
+  <link rel="stylesheet" href="static/css/mdb.min.css"/>
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="satatic/css/style.css"/>
+  <!-- 나눔 바른 고딕 웹 폰트 적용하기 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+</head>
+
+<body style="background-color: rgba( 0, 0, 0, 0.025 )">
+  <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index:3">
+    <div class="container-fluid" id="middle">
+      <!-- Navbar brand -->
+      <a class="navbar-brand nav-link" target="_self" href="http://127.0.0.1:5000" > <!--새로고침-->
+        <img src="static/img/logo.png" height="125" width="125" align=left ><!--로고 이미지-->
+      </a>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="http://127.0.0.1:5000/introduction" target="_self" style="font-size:25px;color:#9EA8B6;font-family:'Nanum Barun Gothic';font-weight:bold">소개</a>
+            </li>
+          </ul>
+        </div>
+        <a style="font-size:20px;color:#000000;font-weight:bold;font-family:'Nanum Barun Gothic';text-align:top">아주대학교 융합캡스톤디자인2021</a> 
+    </div>
+  </nav>
+    <!-- Navbar -->
+  {% if result_exist %}
+  <main class="mt-5">
+    <div class="container">
+      <span id="location_generate"></span>
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-5 gx-5 mb-5">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="static/img/final_result.jpg" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-6 gx-5 mb-4" style="padding:165px">
+            <center>
+             <h2 style="font-family:'Nanum Barun Gothic';color:#000000;font-size:40px;font-weight:bolder">{{ work_title }}<p>{{ character_name }}</p></h2>
+             <p><p><p><button style="font-family:'Nanum Barun Gothic';color:#63C5F2;background-color:#ffffff;border-style:dotted;border-width:8px;border-color:#63C5F2; border-radius:5%;padding: 8px 13px 8px 13px;font-size:35px;font-weight:bold" onclick = "location.href = 'http://127.0.0.1:5000#location_generate'" target="_self">다시하기</button></p></p></p>
+           </center>
+          </div>
+        </div>
+      </section>
+      </div>
+    </main>
+
+
+  {% else %}
+  <header>
+    <!-- Background image -->
+    <div class="image">
+      <img src="static/img/cloud.gif" width="1518" height="550"/>
+      <div class="carousel-item active">
+        <div class="p-5 text-center"> <div class="p-5"/><div class="p-5"/><div class="p-5">
+          <h1 style="font-family:'Nanum Barun Gothic';color:#764CF6;font-size:50px;font-weight:bold">해당 작품 속 인물의 정보가 존재하지 않거나
+          <h5 style="font-family:'Nanum Barun Gothic';color:#764CF6;font-size:50px;font-weight:bold"> 입력이 올바르지 않습니다.
+          <p><p><button style="font-family:'Nanum Barun Gothic';color:#63C5F2;background-color:#ffffff;border-style:dotted;border-width:8px;border-color:#63C5F2; border-radius:5%;padding: 10px 15px 10px 15px;font-size:40px;font-weight:bold" onclick = "location.href = 'http://127.0.0.1:5000#location_generate'" target="_self">다시하기</button></p></p>
+      </div>
+    </div>
+  </header>
+  {% endif %}
+
+</body> 

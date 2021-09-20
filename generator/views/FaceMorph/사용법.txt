@@ -1,0 +1,4 @@
+랜덤 추출도 된다. 이미지 정렬 & 이미지 합성 초 간 단!!!!!!!
+cd C:\Users\buzzi\OneDrive\바탕 화면\융캡디1\이미지 합성\FaceMorph    (각자 경로 설정 알아서 ㄱㄱ)
+
+python faceMorph.py

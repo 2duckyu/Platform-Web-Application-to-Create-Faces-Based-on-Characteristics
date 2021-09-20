@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>GAN을 이용한 캐릭터 특성에 따른 얼굴 생성 웹-ㄴㅇㅋPROJECT</title>
+  <!-- MDB -->
+  <link rel="stylesheet" href="static/css/mdb.min.css"/>
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="satatic/css/style.css"/>
+  <!-- 나눔 바른 고딕 웹 폰트 적용하기 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+</head>
+
+<body style="background-color: rgba( 0, 0, 0, 0.025 )">
+  <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index:1000">
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand nav-link" target="_self" href="http://127.0.0.1:5000" > <!--새로고침-->
+        <img src="static\img\logo.png" height="125" width="125" align=left ><!--로고 이미지-->
+      </a>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="http://127.0.0.1:5000/introduction" target="_self" style="font-size:25px;color:#9EA8B6;font-family:'Nanum Barun Gothic';font-weight:bold">소개</a>
+            </li>
+          </ul>
+        </div>
+        <a style="font-size:20px;color:#000000;font-weight:bold;font-family:'Nanum Barun Gothic';text-align:top">아주대학교 융합캡스톤디자인2021</a> 
+    </div>
+  </nav>
+    <!-- Navbar -->  
+
+      <!--Main Navigation-->
+  <header>
+    <!-- Background image -->
+    <div class="image">
+      <img src="static/img/cloud.gif" width="1518" height="350"/>
+      <div class="carousel-item active">
+        <div class="p-5 text-center"> <div class="p-5"/><div class="p-4"/>
+          <h1 style="font-family:'Nanum Barun Gothic';color:#63C5F2;font-size:60px;font-weight:bold">더이상 상상하지마세요. <span style="color:#764CF6">직접보세요.</span></h1>
+          <h5 style="font-family:'Nanum Barun Gothic';color:#63C5F2;font-size:30px;font-weight:bold">DON'T IMAGINE IT ANYMORE. <span style="color:#764CF6">LOOK AT THE REAL FACE.</span></h5>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+
+  <main class="mt-5">
+    <div class="container">
+      <span id="location_generate"></span>
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-5 gx-5 mb-5">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="static/img/unknown.jpg" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-7 gx-5 mb-5">
+<!--             <div id="loading"> <img src="static/img/loading.gif" alt="loading"/></div> -->
+            <p></p>
+            <h2 style="font-family:'Nanum Barun Gothic';color:#000000"><strong>아래 사항을 입력하세요.</strong></h2>
+            <form id="myform" action="/" method="post" autocomplete="off"> <!-- action의 경우, .php-->
+               <div class="form-group">
+                      <label style="font-family:'Nanum Barun Gothic';color:#000000" for="formGroupExampleInput">작품의 제목</label>
+                      <input style="font-family:'Nanum Barun Gothic'" type="text" required name="work_title" class="form-control" id="work" maxlength="30" placeholder="제목을 입력하세요.">
+                </div>
+               <p><div class="form-group">
+                      <label style="font-family:'Nanum Barun Gothic';color:#000000" for="formGroupExampleInput">작품 속 인물의 이름</label>
+                      <input style="font-family:'Nanum Barun Gothic'" type="text" required name="character_name" class="form-control" id="character" maxlength="30" placeholder="이름을 입력하세요.">
+                </div></p>
+                <p><button style="font-family:'Nanum Barun Gothic';color:#ffffff;background-color:#63C5F2;border-style:none;border-radius:5%;padding: 5px 15px 5px 15px" input type="submit" >얼굴 생성하기!</button></a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!--Main layout-->
+  <!-- script -->
+</body>
+</html>
