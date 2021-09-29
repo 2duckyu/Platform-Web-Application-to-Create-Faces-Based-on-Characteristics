@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cdbdd64-e22e-4ac8-ba9c-9f1ddbd50fa8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/faceMorph.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/views/FaceMorph/faceMorph.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
