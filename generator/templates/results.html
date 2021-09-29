@@ -17,13 +17,13 @@
   <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index:3">
     <div class="container-fluid" id="middle">
       <!-- Navbar brand -->
-      <a class="navbar-brand nav-link" target="_self" href="http://127.0.0.1:5000" > <!--새로고침-->
+      <a class="navbar-brand nav-link" target="_self" href="./" > <!--새로고침-->
         <img src="static/img/logo.png" height="125" width="125" align=left ><!--로고 이미지-->
       </a>
         <div class="collapse navbar-collapse" id="navbarExample01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="http://127.0.0.1:5000/introduction" target="_self" style="font-size:25px;color:#9EA8B6;font-family:'Nanum Barun Gothic';font-weight:bold">소개</a>
+              <a class="nav-link" aria-current="page" href="./introduction" target="_self" style="font-size:25px;color:#9EA8B6;font-family:'Nanum Barun Gothic';font-weight:bold">소개</a>
             </li>
           </ul>
         </div>
@@ -46,14 +46,13 @@
           <div class="col-md-6 gx-5 mb-4" style="padding:165px">
             <center>
              <h2 style="font-family:'Nanum Barun Gothic';color:#000000;font-size:40px;font-weight:bolder">{{ work_title }}<p>{{ character_name }}</p></h2>
-             <p><p><p><button style="font-family:'Nanum Barun Gothic';color:#63C5F2;background-color:#ffffff;border-style:dotted;border-width:8px;border-color:#63C5F2; border-radius:5%;padding: 8px 13px 8px 13px;font-size:35px;font-weight:bold" onclick = "location.href = 'http://127.0.0.1:5000#location_generate'" target="_self">다시하기</button></p></p></p>
+             <p><p><p><button style="font-family:'Nanum Barun Gothic';color:#63C5F2;background-color:#ffffff;border-style:dotted;border-width:8px;border-color:#63C5F2; border-radius:5%;padding: 8px 13px 8px 13px;font-size:35px;font-weight:bold" onclick = "location.href = './#location_generate'" target="_self">다시하기</button></p></p></p>
            </center>
           </div>
         </div>
       </section>
       </div>
     </main>
-
 
   {% else %}
   <header>
@@ -64,7 +63,7 @@
         <div class="p-5 text-center"> <div class="p-5"/><div class="p-5"/><div class="p-5">
           <h1 style="font-family:'Nanum Barun Gothic';color:#764CF6;font-size:50px;font-weight:bold">해당 작품 속 인물의 정보가 존재하지 않거나
           <h5 style="font-family:'Nanum Barun Gothic';color:#764CF6;font-size:50px;font-weight:bold"> 입력이 올바르지 않습니다.
-          <p><p><button style="font-family:'Nanum Barun Gothic';color:#63C5F2;background-color:#ffffff;border-style:dotted;border-width:8px;border-color:#63C5F2; border-radius:5%;padding: 10px 15px 10px 15px;font-size:40px;font-weight:bold" onclick = "location.href = 'http://127.0.0.1:5000#location_generate'" target="_self">다시하기</button></p></p>
+          <p><p><button style="font-family:'Nanum Barun Gothic';color:#63C5F2;background-color:#ffffff;border-style:dotted;border-width:8px;border-color:#63C5F2; border-radius:5%;padding: 10px 15px 10px 15px;font-size:40px;font-weight:bold" onclick = "location.href = './#location_generate'" target="_self">다시하기</button></p></p>
       </div>
     </div>
   </header>
