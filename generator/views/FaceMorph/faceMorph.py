@@ -143,7 +143,7 @@ def random_select(gender, features_list):
 
 def main(result_gender, result_feature):
     random_select(result_gender, result_feature)
-    align_images.abc_mart("/projects/myproject/generator/views/FaceMorph/images/", "/projects/myproject/generator/views/FaceMorph/morph_images/")    # 첫 번째 파라미터는 정렬을 할 이미지 경로, 두 번째 파라미터는 정렬을 마친 후 합성을 할 이미지 경로
+    align_images.abc_mart("views/FaceMorph/images/", "views/FaceMorph/morph_images/")    # 첫 번째 파라미터는 정렬을 할 이미지 경로, 두 번째 파라미터는 정렬을 마친 후 합성을 할 이미지 경로
 
     '''filename = input()
     result_list = []
