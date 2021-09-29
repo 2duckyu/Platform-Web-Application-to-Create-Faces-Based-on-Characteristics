@@ -29,7 +29,7 @@ def abc_mart(raw_dir,aligned_dir,output_size =1024,x_scale=1,y_scale=1,em_scale=
     parser.add_argument('--use_alpha', default=False, help='Add an alpha channel for masking', type=bool)
     """
     #args, other_args = parser.parse_known_args()
-
+    print(os.path.realpath(__file__))
     RAW_IMAGES_DIR = raw_dir
     ALIGNED_IMAGES_DIR = aligned_dir
 
