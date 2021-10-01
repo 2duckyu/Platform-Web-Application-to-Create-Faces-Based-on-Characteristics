@@ -142,6 +142,18 @@ def random_select(gender, features_list):
         shutil.copy(from_, to_)
 
 def main(result_gender, result_feature):
+    #결과를 제외한 모든 합성에 이용한 사진 제거
+    file_list1 = os.listdir("generator/views/FaceMorph/morph_images/")
+    for file1 in file_list1:
+        file_path1 = os.path.join("generator/views/FaceMorph/morph_images/", file1)
+        os.remove(file_path1)
+
+    # 결과를 제외한 모든 합성에 이용한 사진 제거
+    file_list2 = os.listdir("generator/views/FaceMorph/images/")
+    for file2 in file_list2:
+        file_path2 = os.path.join("generator/views/FaceMorph/images/", file2)
+        os.remove(file_path2)
+
     random_select(result_gender, result_feature)
     align_images.abc_mart('generator/views/FaceMorph/images/', 'generator/views/FaceMorph/morph_images/')    # 첫 번째 파라미터는 정렬을 할 이미지 경로, 두 번째 파라미터는 정렬을 마친 후 합성을 할 이미지 경로
 
@@ -328,17 +340,4 @@ def main(result_gender, result_feature):
         result_list.append('testresult{}.jpg'.format(index))
         cv2.waitKey(0)
     cv2.imwrite('generator/static\img/final_result.jpg', np.uint8(imgMorph))
-
-    #결과를 제외한 모든 합성에 이용한 사진 제거
-    file_list1 = os.listdir("generator/views/FaceMorph/morph_images/")
-    for file1 in file_list1:
-        file_path1 = os.path.join("generator/views/FaceMorph/morph_images/", file1)
-        os.remove(file_path1)
-
-    # 결과를 제외한 모든 합성에 이용한 사진 제거
-    file_list2 = os.listdir("generator/views/FaceMorph/images/")
-    for file2 in file_list2:
-        file_path2 = os.path.join("generator/views/FaceMorph/images/", file2)
-        os.remove(file_path2)
-
     return None
