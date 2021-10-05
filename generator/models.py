@@ -7,7 +7,7 @@ class character(db.Model):
     feature = db.Column(db.Text(), nullable=False)
 
 # from generator.models import character
-# q = character(novel='재혼 황후', character='나비에 엘리 트로비', gender='F', feature='coldHearted/rich/generous')
+# q = character(novel='치즈인더트랩', character='유정', gender='M', feature='coldHearted/smart/rich')
 # from generator import db
 # db.session.add(q)
 # db.session.commit()

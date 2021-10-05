@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cdbdd64-e22e-4ac8-ba9c-9f1ddbd50fa8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/default.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/development.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/production.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generator/static/img/final_result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/generator/static/img/final_result.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/faceMorph.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/views/FaceMorph/faceMorph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/images/49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/images/seed0447.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/images/seed0458.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/morph_images/49.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/morph_images/seed0447.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/generator/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/images/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/images/seed0015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/images/seed0293.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/morph_images/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/morph_images/seed0015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/morph_images/seed0293.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/morph_images/testresult1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/generator/views/FaceMorph/morph_images/testresult1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/morph_images/testresult2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/generator/views/FaceMorph/morph_images/testresult2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/views/FaceMorph/sample/M/rich/seed0029.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
