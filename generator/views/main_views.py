@@ -38,6 +38,3 @@ def results(work_title, character_name):
 @bp.route('/introduction')
 def introduction():
     return render_template('introduction.html')
-
-
-
