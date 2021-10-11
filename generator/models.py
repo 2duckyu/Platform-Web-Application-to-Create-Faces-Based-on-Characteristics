@@ -11,4 +11,3 @@ class character(db.Model):
 # from generator import db
 # db.session.add(q)
 # db.session.commit()
-
